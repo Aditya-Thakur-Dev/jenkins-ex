@@ -31,11 +31,11 @@ class MovieInfoControllerTest {
     public void basicTest(){
         //given
         //when
-        Movie m = controller.getMovies("1");
+        Movie m = controller.getMovies("2");
 
         //then
         assertEquals(m.getName(), "Transformers");
-        Mockito.verify(logger, Mockito.times(1)).info("Movie id {} ", "1");
+        Mockito.verify(logger, Mockito.times(1)).info("Movie id {} ", "2");
     }
 
 }
